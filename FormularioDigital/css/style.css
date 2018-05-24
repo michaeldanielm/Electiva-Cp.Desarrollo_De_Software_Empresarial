@@ -1,0 +1,54 @@
+
+#menu-bar{
+    display: none;
+}
+body{
+    font-family: Arial;
+}
+nav{
+    display: block;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+}
+nav li{
+    line-height: 3rem;
+    position: relative;
+}
+nav li ul{
+    position: absolute;
+}
+nav a{
+    color: #ddd;
+    display: block;
+    text-decoration: none;
+    padding: 0 2.5em;
+    text-decoration: none;
+    transition: 0.4s;
+}
+nav a:hover{
+    background: rgba(0,0,0,0.5);
+}
+nav li ul{
+    display: none;
+}
+nav li:hover ul{
+    display: block;
+}
+
+nav > ul {
+    background: #333;
+    display: table;
+    width: 116%;
+}
+nav > ul > li{
+    float: left;
+}
+
+nav li li{
+    background: #222;
+}
+nav > ul > li >ul {
+    top: 100%;
+}
